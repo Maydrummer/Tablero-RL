@@ -1,3 +1,13 @@
+/* Autores: Anthony Maisincho Jivaja
+            Ulbio Alejandro Sanjines
+   Fecha: 20/01/2022  
+   Descripción: Con este código el arduino aparte de contar las RPM 
+   que se obtienen por medio del flanco de subida en el PIN D2, tambien
+   se enviará dicho dato a Simulik mediante conmunicación serial y una
+   trama establecida para no un buen envío y recolección de datos. 
+   El arduino tambien recibirá información desde simuñink, que en este 
+   caso será el PWM y lo llevará a su salida PWM para accionar el motor DC.
+  */  
 #include <TimerOne.h>
 unsigned long counter=0;
 
